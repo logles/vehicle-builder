@@ -12,7 +12,7 @@
 
 Your task is to update an existing TypeScript command-line application that builds and uses cars to have additional options for motorbikes and trucks. The application prompts the user to create a new vehicle or select an existing vehicle. After going through the creation process or the selection process, the user is able to perform certain actions with the selected vehicle. The user is returned to the actions menu after each action until they decide to exit the application.
 
-Link to Walk Through Video: https://app.screencastify.com/v3/watch/4JtNLgrupF4sK281E0c1
+Link to Walk Through Video: https://app.screencastify.com/v3/watch/KnJdc3PyByRMFjIZyj7g
 
 ### Ussage
 
