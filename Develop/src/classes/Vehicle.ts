@@ -1,5 +1,5 @@
 // import Driveable interface
-import Driveable from '../interfaces/Driveable.js';
+import Driveable from "../interfaces/Driveable.js";
 
 // Vehicle class that implements Driveable interface
 class Vehicle implements Driveable {
@@ -7,7 +7,7 @@ class Vehicle implements Driveable {
   started: boolean;
   currentSpeed: number;
 
-  // Constructor for the Vehicle class
+  // Constructor for the Vehicle class //when a new instance is created
   constructor() {
     this.started = false;
     this.currentSpeed = 0;
@@ -22,7 +22,7 @@ class Vehicle implements Driveable {
   // Method to start the vehicle
   start(): void {
     this.started = true;
-    console.log('Vehicle started');
+    console.log("Vehicle started");
   }
 
   // Method to accelerate the vehicle
@@ -32,7 +32,7 @@ class Vehicle implements Driveable {
       this.currentSpeed += change;
       console.log(`Vehicle accelerated to ${this.currentSpeed} mph`);
     } else {
-      console.log('Start the vehicle first');
+      console.log("Start the vehicle first");
     }
   }
 
@@ -43,7 +43,7 @@ class Vehicle implements Driveable {
       this.currentSpeed -= change;
       console.log(`Vehicle decelerated to ${this.currentSpeed} mph`);
     } else {
-      console.log('Start the vehicle first');
+      console.log("Start the vehicle first");
     }
   }
 
@@ -51,7 +51,7 @@ class Vehicle implements Driveable {
   stop(): void {
     this.currentSpeed = 0;
     this.started = false;
-    console.log('Vehicle stopped');
+    console.log("Vehicle stopped");
   }
 
   // Method to turn the vehicle
@@ -60,7 +60,7 @@ class Vehicle implements Driveable {
     if (this.started) {
       console.log(`Vehicle turned ${direction}`);
     } else {
-      console.log('Start the vehicle first');
+      console.log("Start the vehicle first");
     }
   }
 
@@ -68,9 +68,9 @@ class Vehicle implements Driveable {
   reverse(): void {
     // Check if the vehicle is started
     if (this.started) {
-      console.log('Vehicle reversed');
+      console.log("Vehicle reversed");
     } else {
-      console.log('Start the vehicle first');
+      console.log("Start the vehicle first");
     }
   }
 }
